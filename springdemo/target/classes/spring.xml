@@ -3,12 +3,17 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="alien" class="com.mrunmai.springdemo.Alien">
-	<!--  <property name="age" value="10"></property> -->
-	<constructor-arg value="12"></constructor-arg>
-	<property name="laptop" ref="laptop"></property>
+	<bean id="alien" class="com.mrunmai.springdemo.Alien" autowire="byType">
+		<property name="age" value="10"></property>
+		<!-- <constructor-arg value="12"></constructor-arg> -->
+		<!-- <property name="laptop" ref="laptop"></property> -->
+		<!-- <property name="comp" ref="comp"></property> -->
 	</bean>
 
-	<bean id="laptop" class="com.mrunmai.springdemo.Laptop">
+<!-- 	<bean id="comp" class="com.mrunmai.springdemo.Laptop"> -->
+<!-- 	</bean> -->
+
+	<bean id="desktop" class="com.mrunmai.springdemo.Desktop">
 	</bean>
 </beans>
+
