@@ -10,10 +10,10 @@
 		<!-- <property name="comp" ref="comp"></property> -->
 	</bean>
 
-<!-- 	<bean id="comp" class="com.mrunmai.springdemo.Laptop"> -->
-<!-- 	</bean> -->
+	<bean id="comp" class="com.mrunmai.springdemo.Laptop">
+	</bean>
 
-	<bean id="desktop" class="com.mrunmai.springdemo.Desktop">
+	<bean id="desktop" class="com.mrunmai.springdemo.Desktop" primary="true">
 	</bean>
 </beans>
 
