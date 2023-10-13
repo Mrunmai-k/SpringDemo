@@ -25,7 +25,12 @@ public class App {
 //      Spring will create the bean even if you don't create it.
 		/*
 		 * The object is created only once, and every time you try create the new object
-		 * spring container will give the same object. This is called Singleton design pattern which means by default, spring will give you one object.
+		 * spring container will give the same object. This is called Singleton design
+		 * pattern which means by default, spring will give you one object.
 		 */
+//		Now that scope is changed from singleton to prototype we have got two different objects.
+//		Prototype = how many times you have requested that much objects are created.
+//		Singleton even if you don't ask, the object is created. But, in prototype, if you don't ask then no object is created.
+
 	}
 }
