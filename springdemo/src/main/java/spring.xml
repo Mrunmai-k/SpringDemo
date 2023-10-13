@@ -4,7 +4,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="alien" class="com.mrunmai.springdemo.Alien">
-	<property name="age" value="10"></property>
+	<!--  <property name="age" value="10"></property> -->
+	<constructor-arg value="12"></constructor-arg>
 	<property name="laptop" ref="laptop"></property>
 	</bean>
 

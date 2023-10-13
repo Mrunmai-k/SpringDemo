@@ -1,11 +1,16 @@
 package com.mrunmai.springdemo;
 
 public class Alien {
-	private int age;
+	private int age;	
 	private Laptop laptop;
+//	use constructor injection when property is compulsory to be assigned with value and for optional go for setter injection.
 	
-	public Alien() {
-		System.out.println("Alien object created...");
+//	public Alien() {
+//		System.out.println("Alien object created...");
+//	}
+
+	public Alien(int age) {
+		this.age = age;
 	}
 
 	public int getAge() {
