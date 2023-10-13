@@ -5,6 +5,9 @@
 
 	<bean id="alien" class="com.mrunmai.springdemo.Alien">
 	<property name="age" value="10"></property>
+	<property name="laptop" ref="laptop"></property>
 	</bean>
 
+	<bean id="laptop" class="com.mrunmai.springdemo.Laptop">
+	</bean>
 </beans>

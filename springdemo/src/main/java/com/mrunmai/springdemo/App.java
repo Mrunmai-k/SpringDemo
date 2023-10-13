@@ -17,10 +17,10 @@ public class App {
 //		obj1.setAge(15);
 		System.out.println(obj1.getAge());
 
-		Alien obj2 = (Alien) context.getBean("alien");
-		obj2.code();
-
-		System.out.println(obj2.getAge());
+//		Alien obj2 = (Alien) context.getBean("alien");
+//		obj2.code();
+//
+//		System.out.println(obj2.getAge());
 
 //		Beans are classes which has variables and methods.        
 //      The JVM has container and container has all the beans.
